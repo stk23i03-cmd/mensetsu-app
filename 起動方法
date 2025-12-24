@@ -1,0 +1,13 @@
+cd ~/interview-ai/backend
+source .venv/bin/activate
+export WHISPER_MODEL=large-v3
+export WHISPER_DEVICE=cuda
+export WHISPER_COMPUTE_TYPE=int8_float16
+export LD_LIBRARY_PATH="/home/yamagataai/interview-ai/backend/.venv/lib/python3.10/site-packages/nvidia/cublas/lib:/home/yamagataai/interview-ai/backend/.venv/lib/python3.10/site-packages/nvidia/cudnn/lib:$LD_LIBRARY_PATH"
+CUDA_VISIBLE_DEVICES=0 python main.py
+
+ollama run gpt-oss:20b
+
+cd ~/interview-ai/frontend
+npm run dev:https
+

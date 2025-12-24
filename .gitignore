@@ -1,0 +1,23 @@
+node_modules/
+.next/
+dist/
+out/
+# logs/build
+*.log
+.cache/
+
+# env
+.env
+.env.*.local
+
+# editor/OS
+.vscode/
+.DS_Store
+*.wav
+*.webm
+frontend/node_modules
+frontend/public/*.vrm
+
+# python
+backend/__pycache__/
+backend/.venv/
