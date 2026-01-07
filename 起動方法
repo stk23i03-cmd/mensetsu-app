@@ -1,3 +1,11 @@
+事前準備
+・Ollama 本体
+・Ollama内でgpt-oss:20bをダウンロード
+・サーバー本体となるPCのIPアドレスを192.168.1.76:3001に変更する（ローカル証明書のため）
+・NEXT.jsで新しいプロジェクトを作成してフロントエンドを格納する
+・必要なPhtonライブラリをインストール
+・以下のコマンドをそれぞれのウィンドウで実行（単一のウィンドウでは実行しないこと）
+
 cd ~/interview-ai/backend
 source .venv/bin/activate
 export WHISPER_MODEL=large-v3
@@ -10,4 +18,3 @@ ollama run gpt-oss:20b
 
 cd ~/interview-ai/frontend
 npm run dev:https
-
