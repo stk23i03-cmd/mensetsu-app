@@ -12,6 +12,8 @@ pip install requests==2.32.3
 pip install openai-whisper==20240930
 pip install pyttsx3==2.90
 
+sudo apt install ffmpeg
+
 ・以下のコマンドをそれぞれのウィンドウで実行（単一のウィンドウでは実行しないこと）
 
 cd ~/interview-ai/backend
