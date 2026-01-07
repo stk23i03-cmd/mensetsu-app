@@ -4,6 +4,14 @@
 ・サーバー本体となるPCのIPアドレスを192.168.1.76:3001に変更する（ローカル証明書のため）
 ・NEXT.jsで新しいプロジェクトを作成してフロントエンドを格納する
 ・必要なPythonライブラリをインストール
+
+pip install fastapi==0.115.0
+pip install "uvicorn[standard]==0.30.6"
+pip install python-multipart==0.0.9
+pip install requests==2.32.3
+pip install openai-whisper==20240930
+pip install pyttsx3==2.90
+
 ・以下のコマンドをそれぞれのウィンドウで実行（単一のウィンドウでは実行しないこと）
 
 cd ~/interview-ai/backend
